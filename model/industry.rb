@@ -1,4 +1,4 @@
-class Industry
+class IndustryList
   attr_reader :url
   def initialize(args={})
     @url = args.fetch(:url, '')
@@ -26,15 +26,17 @@ class Industry
     end
   end
 
+
   def display_clean_list(input)
     list = tsev_subindustry_filtered(tsev_subindustry_list[input-1])
+
     list.each do |option|
-    keys = option.keys
-    values = option.values
-    industry_info = keys.zip(values)
-    industry_info.each do |industry|
-    puts "#{industry[0]}, #{industry[1]}"
-    end
+      keys = option.keys
+      values = option.values
+      industry_info = keys.zip(values)
+        industry_info.each do |industry|
+          puts "#{industry[0]}, #{industry[1]}"
+        end
       puts "\n"
     end
   end

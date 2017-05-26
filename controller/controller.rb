@@ -16,7 +16,7 @@ class Controller
       when 1..list.length
         industry.display_clean_list(input)
       else
-        puts "Please select a valid number..."
+        view.invalid
     end
   end
 
