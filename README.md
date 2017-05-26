@@ -1,19 +1,20 @@
-API Hackathon
+### API Hackathon
 
 Specs:
+- Ask user for data
+- Query any available web API endpoint for data, based on user input
+- Manipulate that data in a Ruby _MVC_ command line app
+- Display to the user the data they asked for via the command line 
 
-Ask user for data
-Query any available web API endpoint for data, based on user input
-Manipulate that data in a Ruby MVC command line app
-Display to the user the data they asked for via the command line
-API Resources:
+### API Resources:
+- [List of most popular APIs utilized in hackathons](https://drive.google.com/file/d/0B8LS1eXJIZLlZ1lYQ0ItYVlnYVc1bWpzZnBBMDJna3dBMlFZ/view?usp=sharing)
+- [Understanding and consuming APIs and data](http://stackforyourself.com/back-end/front-end/2016/05/01/open-apis/)
+- [Accessing APIs with Ruby: a tutorial](http://stackforyourself.com/2016/08/22/accessing-apis-with-ruby/)
+- [JSONView Chrome Extension](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)
 
-List of most popular APIs utilized in hackathons
-Understanding and consuming APIs and data
-Accessing APIs with Ruby: a tutorial
-JSONView Chrome Extension
-Example in Ruby: below is a non-MVC command-line app that returns parking ticket info for a specific license plate, from the NYC 2015 parking ticket API:
+#### Example in Ruby: below is a non-MVC command-line app that returns parking ticket info for a specific license plate, from the [NYC 2015 parking ticket API](https://data.cityofnewyork.us/dataset/Parking-Violations-Issued-Fiscal-Year-2015/c284-tqph):
 
+```ruby
 # this library is best for making http requests
 # and handling http responses:
 require 'open-uri'
